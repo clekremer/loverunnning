@@ -3,21 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 
-/* Asterisk wildcard selector to override styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 /* General styles */
 body {
     min-height: 100vh;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3 {
@@ -92,12 +92,12 @@ main {
     margin-top: 47px;
 }
 
-/* Hero Section */
+/* Hero section */
 
 #hero {
     height: 600px;
     width: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center/cover;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
 
@@ -114,9 +114,35 @@ main {
 }
 
 #cover-text > h2, #cover-text > h3 {
-    color:#ffffff;
+    color: #ffffff;
 }
 
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
 /* Footer */
 #social-networks {
     text-align: center;
@@ -129,14 +155,14 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
-/* Media query: tables and larger (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
-        display:block;
+        display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
@@ -158,9 +184,9 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-    /* Main Content */
+    /* Main content */
     main {
-        /* Push main content down to accomodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
     /* Hero */
@@ -172,7 +198,7 @@ main {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #menu a:hover {
+    #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
   }
